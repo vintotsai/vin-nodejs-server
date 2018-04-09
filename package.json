@@ -1,0 +1,23 @@
+{
+  "name": "vin-nodejs-server",
+  "version": "1.0.0",
+  "description": "个人本地服务器",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentotsai/vin-nodejs-server.git"
+  },
+  "author": "vintotsai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincentotsai/vin-nodejs-server/issues"
+  },
+  "homepage": "https://github.com/vincentotsai/vin-nodejs-server#readme"
+}
