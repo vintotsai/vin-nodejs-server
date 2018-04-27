@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 const url = require('url')
 
-const port = 8899
+const port = 1024
 
 const server = http.createServer((req, res) => {
   const pathname = url.parse(req.url).pathname
@@ -17,9 +17,9 @@ const server = http.createServer((req, res) => {
       res.write('404,页面不在..')
       res.end()
     } else {
-      // res.writeHead(200, {
-      //   'content-type': 'text/html;charset="utf-8'
-      // })
+      res.writeHead(200, {
+        'content-type': 'text/html;charset="utf-8'
+      })
       res.write(data)
       res.end()
     }
@@ -27,4 +27,4 @@ const server = http.createServer((req, res) => {
 })
 server.listen(port)
 
-console.log('server on :', `http://localhost:${port}`)
+console.log('>server on :', `http://localhost:${port}`)
